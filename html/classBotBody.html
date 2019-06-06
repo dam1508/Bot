@@ -1,0 +1,776 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.16"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Bot Behaviour Algorythm: Dokumentacja klasy BotBody</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Bot Behaviour Algorythm
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.16 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Metody publiczne</a> &#124;
+<a href="#pro-types">Typy chronione</a> &#124;
+<a href="#pro-methods">Metody chronione</a> &#124;
+<a href="#pro-attribs">Atrybuty chronione</a> &#124;
+<a href="classBotBody-members.html">Lista wszystkich składowych</a>  </div>
+  <div class="headertitle">
+<div class="title">Dokumentacja klasy BotBody</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Klasa modelu bazowego danego typu bota.  
+ <a href="classBotBody.html#details">Więcej...</a></p>
+
+<p><code>#include &lt;<a class="el" href="BotBody_8h_source.html">BotBody.h</a>&gt;</code></p>
+<div class="dynheader">
+Diagram dziedziczenia dla BotBody</div>
+<div class="dyncontent">
+<div class="center"><img src="classBotBody__inherit__graph.png" border="0" usemap="#BotBody_inherit__map" alt="Inheritance graph"/></div>
+<map name="BotBody_inherit__map" id="BotBody_inherit__map">
+<area shape="rect" title="Klasa modelu bazowego danego typu bota." alt="" coords="5,80,77,107"/>
+<area shape="rect" href="classBotOne.html" title="Przyklad jak mozna wykorzystac cialo bota do zrobienia roznych wersji przeciwnika." alt="" coords="8,155,75,181"/>
+<area shape="rect" href="classBotBrain.html" title="Maszyna stanow odpowiadajaca za zachowanie bota." alt="" coords="5,5,77,32"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">legenda</a>]</span></center></div>
+<div class="dynheader">
+Diagram współpracy dla BotBody:</div>
+<div class="dyncontent">
+<div class="center"><img src="classBotBody__coll__graph.png" border="0" usemap="#BotBody_coll__map" alt="Collaboration graph"/></div>
+<map name="BotBody_coll__map" id="BotBody_coll__map">
+<area shape="rect" title="Klasa modelu bazowego danego typu bota." alt="" coords="11,171,83,197"/>
+<area shape="rect" href="classBotBrain.html" title="Maszyna stanow odpowiadajaca za zachowanie bota." alt="" coords="11,95,83,121"/>
+<area shape="rect" href="classEventData.html" title="Klasa przechowujaca dane o wydarzeniu." alt="" coords="5,5,89,32"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">legenda</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Metody publiczne</h2></td></tr>
+<tr class="memitem:a5bf6607a9ee9a17e0237a47d9ef3b494"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBotBody.html#a5bf6607a9ee9a17e0237a47d9ef3b494">get_hp</a> ()</td></tr>
+<tr class="memdesc:a5bf6607a9ee9a17e0237a47d9ef3b494"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mapa stanow.  <a href="classBotBody.html#a5bf6607a9ee9a17e0237a47d9ef3b494">Więcej...</a><br /></td></tr>
+<tr class="separator:a5bf6607a9ee9a17e0237a47d9ef3b494"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aebb02237e9971fea5501401f3a39797d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBotBody.html#aebb02237e9971fea5501401f3a39797d">charge</a> (<a class="el" href="structBotData.html">BotData</a> *)</td></tr>
+<tr class="separator:aebb02237e9971fea5501401f3a39797d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6a91709daf6b5d145802b918c455f9c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBotBody.html#ac6a91709daf6b5d145802b918c455f9c">go_idle</a> ()</td></tr>
+<tr class="separator:ac6a91709daf6b5d145802b918c455f9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8771df70e48a7490a2030a1dff56322d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBotBody.html#a8771df70e48a7490a2030a1dff56322d">take_dmg</a> (int damage)</td></tr>
+<tr class="separator:a8771df70e48a7490a2030a1dff56322d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d7729bae53c7aeec6357d6c3ab4ce78"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBotBody.html#a3d7729bae53c7aeec6357d6c3ab4ce78">info</a> ()</td></tr>
+<tr class="separator:a3d7729bae53c7aeec6357d6c3ab4ce78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a133c1d2d9b240acc50c4fa0e52ca6146"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBotBody.html#a133c1d2d9b240acc50c4fa0e52ca6146">loose_hp</a> (int amount)</td></tr>
+<tr class="separator:a133c1d2d9b240acc50c4fa0e52ca6146"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbb7ad8d6b0417cb7c2b62f994d35234"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBotBody.html#abbb7ad8d6b0417cb7c2b62f994d35234">BotBody</a> (int hp=100, int at=10, int spd=2, int att_r=2)</td></tr>
+<tr class="separator:abbb7ad8d6b0417cb7c2b62f994d35234"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classBotBrain"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classBotBrain')"><img src="closed.png" alt="-"/>&#160;Metody publiczne dziedziczone z <a class="el" href="classBotBrain.html">BotBrain</a></td></tr>
+<tr class="memitem:a18db709e7530c9032cef3120c3433778 inherit pub_methods_classBotBrain"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBotBrain.html#a18db709e7530c9032cef3120c3433778">BotBrain</a> (unsigned char maxs)</td></tr>
+<tr class="separator:a18db709e7530c9032cef3120c3433778 inherit pub_methods_classBotBrain"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8badf7213d02915f48ad5e99b04481a0 inherit pub_methods_classBotBrain"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBotBrain.html#a8badf7213d02915f48ad5e99b04481a0">~BotBrain</a> ()</td></tr>
+<tr class="separator:a8badf7213d02915f48ad5e99b04481a0 inherit pub_methods_classBotBrain"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-types"></a>
+Typy chronione</h2></td></tr>
+<tr class="memitem:a2b115504b0e98eabafb935e0f9064979"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBotBody.html#a2b115504b0e98eabafb935e0f9064979">states</a> { <br />
+&#160;&#160;<a class="el" href="classBotBody.html#a2b115504b0e98eabafb935e0f9064979ab349212709b4edb8e2edb6e3f0a1ca5a">IDLE_STATE</a>, 
+<a class="el" href="classBotBody.html#a2b115504b0e98eabafb935e0f9064979aeb218081e83520229366f8e576648573">EVENT_STATE</a>, 
+<a class="el" href="classBotBody.html#a2b115504b0e98eabafb935e0f9064979ada5863b84d27b4faf8815f5901a129dc">PERSUE_STATE</a>, 
+<a class="el" href="classBotBody.html#a2b115504b0e98eabafb935e0f9064979a7a4a1c48d4a06f89ed207d3d21524ce9">ATTACK_STATE</a>, 
+<br />
+&#160;&#160;<a class="el" href="classBotBody.html#a2b115504b0e98eabafb935e0f9064979ac423e6f6a57c917bf61e085e63fbc7ca">RUN_STATE</a>, 
+<a class="el" href="classBotBody.html#a2b115504b0e98eabafb935e0f9064979ac397ade9a1e990c8cbca703fa4a43e96">DEAD_STATE</a>, 
+<a class="el" href="classBotBody.html#a2b115504b0e98eabafb935e0f9064979a3316e6a4080062307116e42e67fb40ae">MAX_STATES</a>
+<br />
+ }</td></tr>
+<tr class="memdesc:a2b115504b0e98eabafb935e0f9064979"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sa to wszystkie stany tego "ciala" bota.  <a href="classBotBody.html#a2b115504b0e98eabafb935e0f9064979">Więcej...</a><br /></td></tr>
+<tr class="separator:a2b115504b0e98eabafb935e0f9064979"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_types_classBotBrain"><td colspan="2" onclick="javascript:toggleInherit('pro_types_classBotBrain')"><img src="closed.png" alt="-"/>&#160;Typy chronione dziedziczone z <a class="el" href="classBotBrain.html">BotBrain</a></td></tr>
+<tr class="memitem:ab32e4b37eac15ea40245de8f1d2fba16 inherit pro_types_classBotBrain"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="classBotBrain.html#ab32e4b37eac15ea40245de8f1d2fba16a0513b27ebb0f2d53ac6c341bf158d404">EVENT_IGNORED</a> = 0xFE, 
+<a class="el" href="classBotBrain.html#ab32e4b37eac15ea40245de8f1d2fba16ad1323a0a44b5121113ca6194128094db">CANNOT_HAPPEN</a>
+ }</td></tr>
+<tr class="separator:ab32e4b37eac15ea40245de8f1d2fba16 inherit pro_types_classBotBrain"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Metody chronione</h2></td></tr>
+<tr class="memitem:a3f8820f9d054d28da5afe069ad015faa"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBotBody.html#a3f8820f9d054d28da5afe069ad015faa">st_idle</a> ()</td></tr>
+<tr class="memdesc:a3f8820f9d054d28da5afe069ad015faa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcje stanow (oznaczone st_&lt;nazwa funkcji&gt;)  <a href="classBotBody.html#a3f8820f9d054d28da5afe069ad015faa">Więcej...</a><br /></td></tr>
+<tr class="separator:a3f8820f9d054d28da5afe069ad015faa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae23a1c4b2206d8815f49f1ed5665f7ce"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBotBody.html#ae23a1c4b2206d8815f49f1ed5665f7ce">st_event</a> (<a class="el" href="structBotData.html">BotData</a> *)</td></tr>
+<tr class="separator:ae23a1c4b2206d8815f49f1ed5665f7ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab16327103afbde20f2e6a4162cfcecb7"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBotBody.html#ab16327103afbde20f2e6a4162cfcecb7">st_persue</a> (<a class="el" href="structBotData.html">BotData</a> *)</td></tr>
+<tr class="separator:ab16327103afbde20f2e6a4162cfcecb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fc3f5202b3d2f228d2200652881d328"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBotBody.html#a8fc3f5202b3d2f228d2200652881d328">st_attack</a> (<a class="el" href="structBotData.html">BotData</a> *)</td></tr>
+<tr class="separator:a8fc3f5202b3d2f228d2200652881d328"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a248d069cf8651b7c71ac9d11307f61b9"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBotBody.html#a248d069cf8651b7c71ac9d11307f61b9">st_run</a> (<a class="el" href="structBotData.html">BotData</a> *)</td></tr>
+<tr class="separator:a248d069cf8651b7c71ac9d11307f61b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a676d9cf734d1368354013babbbc5633d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBotBody.html#a676d9cf734d1368354013babbbc5633d">st_dead</a> ()</td></tr>
+<tr class="separator:a676d9cf734d1368354013babbbc5633d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_classBotBrain"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classBotBrain')"><img src="closed.png" alt="-"/>&#160;Metody chronione dziedziczone z <a class="el" href="classBotBrain.html">BotBrain</a></td></tr>
+<tr class="memitem:a70f99bfce75b8fa814fe1c1ff411228f inherit pro_methods_classBotBrain"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBotBrain.html#a70f99bfce75b8fa814fe1c1ff411228f">external_event</a> (unsigned char, <a class="el" href="classEventData.html">EventData</a> *=NULL)</td></tr>
+<tr class="separator:a70f99bfce75b8fa814fe1c1ff411228f inherit pro_methods_classBotBrain"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32e581248b0d445c7460433a5457c35e inherit pro_methods_classBotBrain"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBotBrain.html#a32e581248b0d445c7460433a5457c35e">internal_event</a> (unsigned char, <a class="el" href="classEventData.html">EventData</a> *=NULL)</td></tr>
+<tr class="memdesc:a32e581248b0d445c7460433a5457c35e inherit pro_methods_classBotBrain"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zdarzenie wewnatrz stanu powodujace zmiane stanu.  <a href="classBotBrain.html#a32e581248b0d445c7460433a5457c35e">Więcej...</a><br /></td></tr>
+<tr class="separator:a32e581248b0d445c7460433a5457c35e inherit pro_methods_classBotBrain"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7cff47543894c7e64388179672093711 inherit pro_methods_classBotBrain"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="structStateStruct.html">StateStruct</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBotBrain.html#a7cff47543894c7e64388179672093711">get_state_map</a> ()=0</td></tr>
+<tr class="separator:a7cff47543894c7e64388179672093711 inherit pro_methods_classBotBrain"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Atrybuty chronione</h2></td></tr>
+<tr class="memitem:aa1f0ce21a14de801e4ddadf6df981f91"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBotBody.html#aa1f0ce21a14de801e4ddadf6df981f91">health_points</a></td></tr>
+<tr class="separator:aa1f0ce21a14de801e4ddadf6df981f91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad61b074cc11bf23c79482d3c4e09d389"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBotBody.html#ad61b074cc11bf23c79482d3c4e09d389">attention</a></td></tr>
+<tr class="separator:ad61b074cc11bf23c79482d3c4e09d389"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3457a7c00233abf52459623061003136"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBotBody.html#a3457a7c00233abf52459623061003136">speed</a></td></tr>
+<tr class="separator:a3457a7c00233abf52459623061003136"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19d2073a69a968fe8c59ae275b339ee4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBotBody.html#a19d2073a69a968fe8c59ae275b339ee4">player_distance</a></td></tr>
+<tr class="separator:a19d2073a69a968fe8c59ae275b339ee4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b8dc9e227b4e30f6c6539022cb31a53"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBotBody.html#a0b8dc9e227b4e30f6c6539022cb31a53">attack_range</a></td></tr>
+<tr class="separator:a0b8dc9e227b4e30f6c6539022cb31a53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_classBotBrain"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classBotBrain')"><img src="closed.png" alt="-"/>&#160;Atrybuty chronione dziedziczone z <a class="el" href="classBotBrain.html">BotBrain</a></td></tr>
+<tr class="memitem:adc35eb18f25699277600a1093d3a13b5 inherit pro_attribs_classBotBrain"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBotBrain.html#adc35eb18f25699277600a1093d3a13b5">current_state</a></td></tr>
+<tr class="separator:adc35eb18f25699277600a1093d3a13b5 inherit pro_attribs_classBotBrain"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Opis szczegółowy</h2>
+<div class="textblock"><p>Klasa modelu bazowego danego typu bota. </p>
+
+<p class="definition">Definicja w linii <a class="el" href="BotBody_8h_source.html#l00020">20</a> pliku <a class="el" href="BotBody_8h_source.html">BotBody.h</a>.</p>
+</div><h2 class="groupheader">Dokumentacja składowych wyliczanych</h2>
+<a id="a2b115504b0e98eabafb935e0f9064979"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b115504b0e98eabafb935e0f9064979">&#9670;&nbsp;</a></span>states</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classBotBody.html#a2b115504b0e98eabafb935e0f9064979">BotBody::states</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sa to wszystkie stany tego "ciala" bota. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Wartości wyliczeń</th></tr><tr><td class="fieldname"><a id="a2b115504b0e98eabafb935e0f9064979ab349212709b4edb8e2edb6e3f0a1ca5a"></a>IDLE_STATE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2b115504b0e98eabafb935e0f9064979aeb218081e83520229366f8e576648573"></a>EVENT_STATE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2b115504b0e98eabafb935e0f9064979ada5863b84d27b4faf8815f5901a129dc"></a>PERSUE_STATE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2b115504b0e98eabafb935e0f9064979a7a4a1c48d4a06f89ed207d3d21524ce9"></a>ATTACK_STATE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2b115504b0e98eabafb935e0f9064979ac423e6f6a57c917bf61e085e63fbc7ca"></a>RUN_STATE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2b115504b0e98eabafb935e0f9064979ac397ade9a1e990c8cbca703fa4a43e96"></a>DEAD_STATE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2b115504b0e98eabafb935e0f9064979a3316e6a4080062307116e42e67fb40ae"></a>MAX_STATES&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+<p class="definition">Definicja w linii <a class="el" href="BotBody_8h_source.html#l00046">46</a> pliku <a class="el" href="BotBody_8h_source.html">BotBody.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    {</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <a class="code" href="classBotBody.html#a2b115504b0e98eabafb935e0f9064979ab349212709b4edb8e2edb6e3f0a1ca5a">IDLE_STATE</a>,</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <a class="code" href="classBotBody.html#a2b115504b0e98eabafb935e0f9064979aeb218081e83520229366f8e576648573">EVENT_STATE</a>,</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <a class="code" href="classBotBody.html#a2b115504b0e98eabafb935e0f9064979ada5863b84d27b4faf8815f5901a129dc">PERSUE_STATE</a>,</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <a class="code" href="classBotBody.html#a2b115504b0e98eabafb935e0f9064979a7a4a1c48d4a06f89ed207d3d21524ce9">ATTACK_STATE</a>,</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <a class="code" href="classBotBody.html#a2b115504b0e98eabafb935e0f9064979ac423e6f6a57c917bf61e085e63fbc7ca">RUN_STATE</a>,</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <a class="code" href="classBotBody.html#a2b115504b0e98eabafb935e0f9064979ac397ade9a1e990c8cbca703fa4a43e96">DEAD_STATE</a>,</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <a class="code" href="classBotBody.html#a2b115504b0e98eabafb935e0f9064979a3316e6a4080062307116e42e67fb40ae">MAX_STATES</a></div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    };</div></div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Dokumentacja konstruktora i destruktora</h2>
+<a id="abbb7ad8d6b0417cb7c2b62f994d35234"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abbb7ad8d6b0417cb7c2b62f994d35234">&#9670;&nbsp;</a></span>BotBody()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BotBody::BotBody </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>hp</em> = <code>100</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>at</em> = <code>10</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>spd</em> = <code>2</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>att_r</em> = <code>2</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="BotBody_8cpp_source.html#l00122">122</a> pliku <a class="el" href="BotBody_8cpp_source.html">BotBody.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;:<a class="code" href="classBotBrain.html#a18db709e7530c9032cef3120c3433778">BotBrain</a>(<a class="code" href="classBotBody.html#a2b115504b0e98eabafb935e0f9064979a3316e6a4080062307116e42e67fb40ae">MAX_STATES</a>), <a class="code" href="classBotBody.html#aa1f0ce21a14de801e4ddadf6df981f91">health_points</a>(hp), <a class="code" href="classBotBody.html#ad61b074cc11bf23c79482d3c4e09d389">attention</a>(at),<a class="code" href="classBotBody.html#a3457a7c00233abf52459623061003136">speed</a>(spd),<a class="code" href="classBotBody.html#a0b8dc9e227b4e30f6c6539022cb31a53">attack_range</a>(att_r)</div><div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;{}</div></div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Dokumentacja funkcji składowych</h2>
+<a id="aebb02237e9971fea5501401f3a39797d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aebb02237e9971fea5501401f3a39797d">&#9670;&nbsp;</a></span>charge()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BotBody::charge </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structBotData.html">BotData</a> *&#160;</td>
+          <td class="paramname"><em>p_data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Jest to pewne zdarzenie powodujace agresje bota. Polega ono na zmianie stanu w momencie wywolania na stan ktory zostal przypisany w transition map. </p>
+<p>Transition map mowi nam do jakiego stanu powinnismy przejsc gdy wywolany zostanieexternal st_event. Do kazdego stanu przypisujemy ten na ktory ma sie zmienic.</p>
+
+<p class="definition">Definicja w linii <a class="el" href="BotBody_8cpp_source.html#l00093">93</a> pliku <a class="el" href="BotBody_8cpp_source.html">BotBody.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;{</div><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <a class="code" href="BotBrain_8h.html#a4fedc14db22820d7c8185662a42eab03">BEGIN_TRANSITION_MAP</a>                          </div><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        <a class="code" href="BotBrain_8h.html#ae7080f0c4d2973a03c3817e7d8f3d91b">TRANSITION_MAP_ENTRY</a>(<a class="code" href="classBotBody.html#a2b115504b0e98eabafb935e0f9064979aeb218081e83520229366f8e576648573">EVENT_STATE</a>)              </div><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        <a class="code" href="BotBrain_8h.html#ae7080f0c4d2973a03c3817e7d8f3d91b">TRANSITION_MAP_ENTRY</a>(<a class="code" href="classBotBody.html#a2b115504b0e98eabafb935e0f9064979aeb218081e83520229366f8e576648573">EVENT_STATE</a>)</div><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        <a class="code" href="BotBrain_8h.html#ae7080f0c4d2973a03c3817e7d8f3d91b">TRANSITION_MAP_ENTRY</a>(<a class="code" href="classBotBrain.html#ab32e4b37eac15ea40245de8f1d2fba16a0513b27ebb0f2d53ac6c341bf158d404">EVENT_IGNORED</a>)</div><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        <a class="code" href="BotBrain_8h.html#ae7080f0c4d2973a03c3817e7d8f3d91b">TRANSITION_MAP_ENTRY</a>(<a class="code" href="classBotBody.html#a2b115504b0e98eabafb935e0f9064979a7a4a1c48d4a06f89ed207d3d21524ce9">ATTACK_STATE</a>)</div><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        <a class="code" href="BotBrain_8h.html#ae7080f0c4d2973a03c3817e7d8f3d91b">TRANSITION_MAP_ENTRY</a>(<a class="code" href="classBotBody.html#a2b115504b0e98eabafb935e0f9064979ada5863b84d27b4faf8815f5901a129dc">PERSUE_STATE</a>)</div><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        <a class="code" href="BotBrain_8h.html#ae7080f0c4d2973a03c3817e7d8f3d91b">TRANSITION_MAP_ENTRY</a>(<a class="code" href="classBotBrain.html#ab32e4b37eac15ea40245de8f1d2fba16ad1323a0a44b5121113ca6194128094db">CANNOT_HAPPEN</a>)             </div><div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <a class="code" href="BotBrain_8h.html#af8cee359bd063c53df3a770f4618acd1">END_TRANSITION_MAP</a>(p_data)</div><div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;}</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a5bf6607a9ee9a17e0237a47d9ef3b494"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5bf6607a9ee9a17e0237a47d9ef3b494">&#9670;&nbsp;</a></span>get_hp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int BotBody::get_hp </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Mapa stanow. </p>
+<p>Przyporzadkowywuje ona funkcje stanow, do odpowiadajacym im stanow </p>
+
+<p class="definition">Definicja w linii <a class="el" href="BotBody_8h_source.html#l00073">73</a> pliku <a class="el" href="BotBody_8h_source.html">BotBody.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;{<span class="keywordflow">return</span> <a class="code" href="classBotBody.html#aa1f0ce21a14de801e4ddadf6df981f91">health_points</a>;}</div></div><!-- fragment -->
+</div>
+</div>
+<a id="ac6a91709daf6b5d145802b918c455f9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6a91709daf6b5d145802b918c455f9c">&#9670;&nbsp;</a></span>go_idle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BotBody::go_idle </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="BotBody_8cpp_source.html#l00110">110</a> pliku <a class="el" href="BotBody_8cpp_source.html">BotBody.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;{</div><div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <a class="code" href="BotBrain_8h.html#a4fedc14db22820d7c8185662a42eab03">BEGIN_TRANSITION_MAP</a></div><div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        <a class="code" href="BotBrain_8h.html#ae7080f0c4d2973a03c3817e7d8f3d91b">TRANSITION_MAP_ENTRY</a>(<a class="code" href="classBotBrain.html#ab32e4b37eac15ea40245de8f1d2fba16a0513b27ebb0f2d53ac6c341bf158d404">EVENT_IGNORED</a>)</div><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        <a class="code" href="BotBrain_8h.html#ae7080f0c4d2973a03c3817e7d8f3d91b">TRANSITION_MAP_ENTRY</a>(<a class="code" href="classBotBody.html#a2b115504b0e98eabafb935e0f9064979ab349212709b4edb8e2edb6e3f0a1ca5a">IDLE_STATE</a>)</div><div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        <a class="code" href="BotBrain_8h.html#ae7080f0c4d2973a03c3817e7d8f3d91b">TRANSITION_MAP_ENTRY</a>(<a class="code" href="classBotBody.html#a2b115504b0e98eabafb935e0f9064979ab349212709b4edb8e2edb6e3f0a1ca5a">IDLE_STATE</a>)</div><div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        <a class="code" href="BotBrain_8h.html#ae7080f0c4d2973a03c3817e7d8f3d91b">TRANSITION_MAP_ENTRY</a>(<a class="code" href="classBotBody.html#a2b115504b0e98eabafb935e0f9064979ab349212709b4edb8e2edb6e3f0a1ca5a">IDLE_STATE</a>)</div><div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        <a class="code" href="BotBrain_8h.html#ae7080f0c4d2973a03c3817e7d8f3d91b">TRANSITION_MAP_ENTRY</a>(<a class="code" href="classBotBody.html#a2b115504b0e98eabafb935e0f9064979ab349212709b4edb8e2edb6e3f0a1ca5a">IDLE_STATE</a>)</div><div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        <a class="code" href="BotBrain_8h.html#ae7080f0c4d2973a03c3817e7d8f3d91b">TRANSITION_MAP_ENTRY</a>(<a class="code" href="classBotBrain.html#ab32e4b37eac15ea40245de8f1d2fba16ad1323a0a44b5121113ca6194128094db">CANNOT_HAPPEN</a>)</div><div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <a class="code" href="BotBrain_8h.html#af8cee359bd063c53df3a770f4618acd1">END_TRANSITION_MAP</a>(NULL)</div><div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;}</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a3d7729bae53c7aeec6357d6c3ab4ce78"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d7729bae53c7aeec6357d6c3ab4ce78">&#9670;&nbsp;</a></span>info()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BotBody::info </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="BotBody_8cpp_source.html#l00008">8</a> pliku <a class="el" href="BotBody_8cpp_source.html">BotBody.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    cout&lt;&lt;<a class="code" href="classBotBody.html#aa1f0ce21a14de801e4ddadf6df981f91">health_points</a>;</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;}</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a133c1d2d9b240acc50c4fa0e52ca6146"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a133c1d2d9b240acc50c4fa0e52ca6146">&#9670;&nbsp;</a></span>loose_hp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BotBody::loose_hp </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>amount</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="BotBody_8h_source.html#l00086">86</a> pliku <a class="el" href="BotBody_8h_source.html">BotBody.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;{<a class="code" href="classBotBody.html#aa1f0ce21a14de801e4ddadf6df981f91">health_points</a>-=amount;}</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a8fc3f5202b3d2f228d2200652881d328"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8fc3f5202b3d2f228d2200652881d328">&#9670;&nbsp;</a></span>st_attack()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BotBody::st_attack </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structBotData.html">BotData</a> *&#160;</td>
+          <td class="paramname"><em>p_data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplementowana w <a class="el" href="classBotOne.html#ad974b4a0c0cb30ce76c361c2a568fe3a">BotOne</a>.</p>
+
+<p class="definition">Definicja w linii <a class="el" href="BotBody_8cpp_source.html#l00061">61</a> pliku <a class="el" href="BotBody_8cpp_source.html">BotBody.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;{</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <a class="code" href="structBotData.html">BotData</a>* _data = <span class="keyword">new</span> <a class="code" href="structBotData.html">BotData</a>();</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    _data-&gt;<a class="code" href="structBotData.html#ae136eac8c90660346876d9c1fe7a9503">distance_from_player</a> = p_data-&gt;<a class="code" href="structBotData.html#ae136eac8c90660346876d9c1fe7a9503">distance_from_player</a>;</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    cout&lt;&lt;<span class="stringliteral">&quot;Attack!&quot;</span>&lt;&lt;endl;</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <a class="code" href="classBotBody.html#a133c1d2d9b240acc50c4fa0e52ca6146">loose_hp</a>(35);</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="classBotBody.html#aa1f0ce21a14de801e4ddadf6df981f91">health_points</a> &lt;= 0)</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <a class="code" href="classBotBrain.html#a32e581248b0d445c7460433a5457c35e">internal_event</a>(<a class="code" href="classBotBody.html#a2b115504b0e98eabafb935e0f9064979ac397ade9a1e990c8cbca703fa4a43e96">DEAD_STATE</a>);</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span>(<a class="code" href="classBotBody.html#aa1f0ce21a14de801e4ddadf6df981f91">health_points</a> &gt; 20 &amp;&amp; _data-&gt;<a class="code" href="structBotData.html#ae136eac8c90660346876d9c1fe7a9503">distance_from_player</a> &lt;= <a class="code" href="classBotBody.html#a0b8dc9e227b4e30f6c6539022cb31a53">attack_range</a>)</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <a class="code" href="classBotBrain.html#a32e581248b0d445c7460433a5457c35e">internal_event</a>(<a class="code" href="classBotBody.html#a2b115504b0e98eabafb935e0f9064979a7a4a1c48d4a06f89ed207d3d21524ce9">ATTACK_STATE</a>, _data);</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordflow">else</span></div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <a class="code" href="classBotBrain.html#a32e581248b0d445c7460433a5457c35e">internal_event</a>(<a class="code" href="classBotBody.html#a2b115504b0e98eabafb935e0f9064979ab349212709b4edb8e2edb6e3f0a1ca5a">IDLE_STATE</a>);</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;}</div></div><!-- fragment --><div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="classBotBody_a8fc3f5202b3d2f228d2200652881d328_cgraph.png" border="0" usemap="#classBotBody_a8fc3f5202b3d2f228d2200652881d328_cgraph" alt=""/></div>
+<map name="classBotBody_a8fc3f5202b3d2f228d2200652881d328_cgraph" id="classBotBody_a8fc3f5202b3d2f228d2200652881d328_cgraph">
+<area shape="rect" title=" " alt="" coords="5,42,140,69"/>
+<area shape="rect" href="classBotBrain.html#a32e581248b0d445c7460433a5457c35e" title="Zdarzenie wewnatrz stanu powodujace zmiane stanu." alt="" coords="193,5,315,47"/>
+<area shape="rect" href="classBotBody.html#a133c1d2d9b240acc50c4fa0e52ca6146" title=" " alt="" coords="188,71,320,98"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a676d9cf734d1368354013babbbc5633d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a676d9cf734d1368354013babbbc5633d">&#9670;&nbsp;</a></span>st_dead()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BotBody::st_dead </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="BotBody_8cpp_source.html#l00088">88</a> pliku <a class="el" href="BotBody_8cpp_source.html">BotBody.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;{</div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    cout&lt;&lt;<span class="stringliteral">&quot;Dead :(&quot;</span>&lt;&lt;endl;</div><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;}</div></div><!-- fragment -->
+</div>
+</div>
+<a id="ae23a1c4b2206d8815f49f1ed5665f7ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae23a1c4b2206d8815f49f1ed5665f7ce">&#9670;&nbsp;</a></span>st_event()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BotBody::st_event </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structBotData.html">BotData</a> *&#160;</td>
+          <td class="paramname"><em>p_data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="BotBody_8cpp_source.html#l00022">22</a> pliku <a class="el" href="BotBody_8cpp_source.html">BotBody.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;{</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <a class="code" href="structBotData.html">BotData</a>* _data = <span class="keyword">new</span> <a class="code" href="structBotData.html">BotData</a>();</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    _data-&gt;<a class="code" href="structBotData.html#ae136eac8c90660346876d9c1fe7a9503">distance_from_player</a> = p_data-&gt;<a class="code" href="structBotData.html#ae136eac8c90660346876d9c1fe7a9503">distance_from_player</a>;</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordflow">if</span>(p_data-&gt;<a class="code" href="structBotData.html#ae136eac8c90660346876d9c1fe7a9503">distance_from_player</a> &gt; <a class="code" href="classBotBody.html#ad61b074cc11bf23c79482d3c4e09d389">attention</a>)</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <a class="code" href="classBotBrain.html#a32e581248b0d445c7460433a5457c35e">internal_event</a>(<a class="code" href="classBotBody.html#a2b115504b0e98eabafb935e0f9064979ab349212709b4edb8e2edb6e3f0a1ca5a">IDLE_STATE</a>);</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span>(p_data-&gt;<a class="code" href="structBotData.html#ae136eac8c90660346876d9c1fe7a9503">distance_from_player</a> &gt;= <a class="code" href="classBotBody.html#a0b8dc9e227b4e30f6c6539022cb31a53">attack_range</a>)</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <a class="code" href="classBotBrain.html#a32e581248b0d445c7460433a5457c35e">internal_event</a>(<a class="code" href="classBotBody.html#a2b115504b0e98eabafb935e0f9064979ada5863b84d27b4faf8815f5901a129dc">PERSUE_STATE</a>, _data);</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordflow">else</span> <a class="code" href="classBotBrain.html#a32e581248b0d445c7460433a5457c35e">internal_event</a>(<a class="code" href="classBotBody.html#a2b115504b0e98eabafb935e0f9064979a7a4a1c48d4a06f89ed207d3d21524ce9">ATTACK_STATE</a>, _data);</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;}</div></div><!-- fragment --><div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="classBotBody_ae23a1c4b2206d8815f49f1ed5665f7ce_cgraph.png" border="0" usemap="#classBotBody_ae23a1c4b2206d8815f49f1ed5665f7ce_cgraph" alt=""/></div>
+<map name="classBotBody_ae23a1c4b2206d8815f49f1ed5665f7ce_cgraph" id="classBotBody_ae23a1c4b2206d8815f49f1ed5665f7ce_cgraph">
+<area shape="rect" title=" " alt="" coords="5,13,136,39"/>
+<area shape="rect" href="classBotBrain.html#a32e581248b0d445c7460433a5457c35e" title="Zdarzenie wewnatrz stanu powodujace zmiane stanu." alt="" coords="184,5,307,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a3f8820f9d054d28da5afe069ad015faa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f8820f9d054d28da5afe069ad015faa">&#9670;&nbsp;</a></span>st_idle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BotBody::st_idle </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Funkcje stanow (oznaczone st_&lt;nazwa funkcji&gt;) </p>
+<p>Każda z nich jest wywolywana w momencie przejscia do danego stanu. To wlasnie one determinuja jak bedzie zachowywal sie bot. Kazda z nich moze wywolywac rozne funkcje wplywajace na statystyki bota lub dane zdarzenia. To w nich znajduja sie internal_event powodujace przejscia z jednego stanu do drugiego w sposob nie wymuszony "z zewnatrz" </p>
+
+<p class="definition">Definicja w linii <a class="el" href="BotBody_8cpp_source.html#l00015">15</a> pliku <a class="el" href="BotBody_8cpp_source.html">BotBody.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;{</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    cout&lt;&lt;<span class="stringliteral">&quot;Does nothing&quot;</span>&lt;&lt;endl;</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;}</div></div><!-- fragment -->
+</div>
+</div>
+<a id="ab16327103afbde20f2e6a4162cfcecb7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab16327103afbde20f2e6a4162cfcecb7">&#9670;&nbsp;</a></span>st_persue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BotBody::st_persue </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structBotData.html">BotData</a> *&#160;</td>
+          <td class="paramname"><em>p_data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="BotBody_8cpp_source.html#l00038">38</a> pliku <a class="el" href="BotBody_8cpp_source.html">BotBody.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;{</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    cout&lt;&lt;<span class="stringliteral">&quot;I&#39;ll get u!&quot;</span>&lt;&lt;endl;</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <a class="code" href="structBotData.html">BotData</a>* _data = <span class="keyword">new</span> <a class="code" href="structBotData.html">BotData</a>();</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    _data-&gt;<a class="code" href="structBotData.html#ae136eac8c90660346876d9c1fe7a9503">distance_from_player</a> = p_data-&gt;<a class="code" href="structBotData.html#ae136eac8c90660346876d9c1fe7a9503">distance_from_player</a>;</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    _data-&gt;<a class="code" href="structBotData.html#ae136eac8c90660346876d9c1fe7a9503">distance_from_player</a> -= <a class="code" href="classBotBody.html#a3457a7c00233abf52459623061003136">speed</a>;</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    cout&lt;&lt;_data-&gt;<a class="code" href="structBotData.html#ae136eac8c90660346876d9c1fe7a9503">distance_from_player</a>;</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordflow">if</span>(_data-&gt;<a class="code" href="structBotData.html#ae136eac8c90660346876d9c1fe7a9503">distance_from_player</a> &lt;= <a class="code" href="classBotBody.html#a0b8dc9e227b4e30f6c6539022cb31a53">attack_range</a>)</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <a class="code" href="classBotBrain.html#a32e581248b0d445c7460433a5457c35e">internal_event</a>(<a class="code" href="classBotBody.html#a2b115504b0e98eabafb935e0f9064979a7a4a1c48d4a06f89ed207d3d21524ce9">ATTACK_STATE</a>, _data);</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span>(_data-&gt;<a class="code" href="structBotData.html#ae136eac8c90660346876d9c1fe7a9503">distance_from_player</a> &lt; <a class="code" href="classBotBody.html#ad61b074cc11bf23c79482d3c4e09d389">attention</a>)</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <a class="code" href="classBotBrain.html#a32e581248b0d445c7460433a5457c35e">internal_event</a>(<a class="code" href="classBotBody.html#a2b115504b0e98eabafb935e0f9064979ada5863b84d27b4faf8815f5901a129dc">PERSUE_STATE</a>, _data);</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordflow">else</span> </div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <a class="code" href="classBotBrain.html#a32e581248b0d445c7460433a5457c35e">internal_event</a>(<a class="code" href="classBotBody.html#a2b115504b0e98eabafb935e0f9064979ab349212709b4edb8e2edb6e3f0a1ca5a">IDLE_STATE</a>);</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;}</div></div><!-- fragment --><div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="classBotBody_ab16327103afbde20f2e6a4162cfcecb7_cgraph.png" border="0" usemap="#classBotBody_ab16327103afbde20f2e6a4162cfcecb7_cgraph" alt=""/></div>
+<map name="classBotBody_ab16327103afbde20f2e6a4162cfcecb7_cgraph" id="classBotBody_ab16327103afbde20f2e6a4162cfcecb7_cgraph">
+<area shape="rect" title=" " alt="" coords="5,13,143,39"/>
+<area shape="rect" href="classBotBrain.html#a32e581248b0d445c7460433a5457c35e" title="Zdarzenie wewnatrz stanu powodujace zmiane stanu." alt="" coords="191,5,313,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a248d069cf8651b7c71ac9d11307f61b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a248d069cf8651b7c71ac9d11307f61b9">&#9670;&nbsp;</a></span>st_run()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BotBody::st_run </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structBotData.html">BotData</a> *&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="BotBody_8cpp_source.html#l00081">81</a> pliku <a class="el" href="BotBody_8cpp_source.html">BotBody.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;{</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;cout&lt;&lt;<span class="stringliteral">&quot;AAA!&quot;</span>&lt;&lt;endl;</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;}</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a8771df70e48a7490a2030a1dff56322d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8771df70e48a7490a2030a1dff56322d">&#9670;&nbsp;</a></span>take_dmg()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BotBody::take_dmg </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>damage</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="BotBody_8cpp_source.html#l00003">3</a> pliku <a class="el" href="BotBody_8cpp_source.html">BotBody.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;{</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;    <a class="code" href="classBotBody.html#a133c1d2d9b240acc50c4fa0e52ca6146">loose_hp</a>(damage);</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;}</div></div><!-- fragment --><div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="classBotBody_a8771df70e48a7490a2030a1dff56322d_cgraph.png" border="0" usemap="#classBotBody_a8771df70e48a7490a2030a1dff56322d_cgraph" alt=""/></div>
+<map name="classBotBody_a8771df70e48a7490a2030a1dff56322d_cgraph" id="classBotBody_a8771df70e48a7490a2030a1dff56322d_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,143,32"/>
+<area shape="rect" href="classBotBody.html#a133c1d2d9b240acc50c4fa0e52ca6146" title=" " alt="" coords="191,5,323,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Dokumentacja atrybutów składowych</h2>
+<a id="a0b8dc9e227b4e30f6c6539022cb31a53"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b8dc9e227b4e30f6c6539022cb31a53">&#9670;&nbsp;</a></span>attack_range</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int BotBody::attack_range</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="BotBody_8h_source.html#l00028">28</a> pliku <a class="el" href="BotBody_8h_source.html">BotBody.h</a>.</p>
+
+</div>
+</div>
+<a id="ad61b074cc11bf23c79482d3c4e09d389"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad61b074cc11bf23c79482d3c4e09d389">&#9670;&nbsp;</a></span>attention</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int BotBody::attention</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="BotBody_8h_source.html#l00025">25</a> pliku <a class="el" href="BotBody_8h_source.html">BotBody.h</a>.</p>
+
+</div>
+</div>
+<a id="aa1f0ce21a14de801e4ddadf6df981f91"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1f0ce21a14de801e4ddadf6df981f91">&#9670;&nbsp;</a></span>health_points</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int BotBody::health_points</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="BotBody_8h_source.html#l00024">24</a> pliku <a class="el" href="BotBody_8h_source.html">BotBody.h</a>.</p>
+
+</div>
+</div>
+<a id="a19d2073a69a968fe8c59ae275b339ee4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19d2073a69a968fe8c59ae275b339ee4">&#9670;&nbsp;</a></span>player_distance</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int BotBody::player_distance</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="BotBody_8h_source.html#l00027">27</a> pliku <a class="el" href="BotBody_8h_source.html">BotBody.h</a>.</p>
+
+</div>
+</div>
+<a id="a3457a7c00233abf52459623061003136"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3457a7c00233abf52459623061003136">&#9670;&nbsp;</a></span>speed</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int BotBody::speed</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="BotBody_8h_source.html#l00026">26</a> pliku <a class="el" href="BotBody_8h_source.html">BotBody.h</a>.</p>
+
+</div>
+</div>
+<hr/>Dokumentacja dla tej klasy została wygenerowana z plików:<ul>
+<li><a class="el" href="BotBody_8h_source.html">BotBody.h</a></li>
+<li><a class="el" href="BotBody_8cpp_source.html">BotBody.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<div class="ttc" id="aclassBotBrain_html_a32e581248b0d445c7460433a5457c35e"><div class="ttname"><a href="classBotBrain.html#a32e581248b0d445c7460433a5457c35e">BotBrain::internal_event</a></div><div class="ttdeci">void internal_event(unsigned char, EventData *=NULL)</div><div class="ttdoc">Zdarzenie wewnatrz stanu powodujace zmiane stanu.</div><div class="ttdef"><b>Definition:</b> <a href="BotBrain_8cpp_source.html#l00022">BotBrain.cpp:22</a></div></div>
+<div class="ttc" id="aclassBotBody_html_a3457a7c00233abf52459623061003136"><div class="ttname"><a href="classBotBody.html#a3457a7c00233abf52459623061003136">BotBody::speed</a></div><div class="ttdeci">int speed</div><div class="ttdef"><b>Definition:</b> <a href="BotBody_8h_source.html#l00026">BotBody.h:26</a></div></div>
+<div class="ttc" id="astructBotData_html_ae136eac8c90660346876d9c1fe7a9503"><div class="ttname"><a href="structBotData.html#ae136eac8c90660346876d9c1fe7a9503">BotData::distance_from_player</a></div><div class="ttdeci">int distance_from_player</div><div class="ttdef"><b>Definition:</b> <a href="BotBody_8h_source.html#l00016">BotBody.h:16</a></div></div>
+<div class="ttc" id="aBotBrain_8h_html_a4fedc14db22820d7c8185662a42eab03"><div class="ttname"><a href="BotBrain_8h.html#a4fedc14db22820d7c8185662a42eab03">BEGIN_TRANSITION_MAP</a></div><div class="ttdeci">#define BEGIN_TRANSITION_MAP</div><div class="ttdef"><b>Definition:</b> <a href="BotBrain_8h_source.html#l00060">BotBrain.h:60</a></div></div>
+<div class="ttc" id="aclassBotBrain_html_ab32e4b37eac15ea40245de8f1d2fba16a0513b27ebb0f2d53ac6c341bf158d404"><div class="ttname"><a href="classBotBrain.html#ab32e4b37eac15ea40245de8f1d2fba16a0513b27ebb0f2d53ac6c341bf158d404">BotBrain::EVENT_IGNORED</a></div><div class="ttdef"><b>Definition:</b> <a href="BotBrain_8h_source.html#l00025">BotBrain.h:25</a></div></div>
+<div class="ttc" id="aclassBotBody_html_a2b115504b0e98eabafb935e0f9064979ac397ade9a1e990c8cbca703fa4a43e96"><div class="ttname"><a href="classBotBody.html#a2b115504b0e98eabafb935e0f9064979ac397ade9a1e990c8cbca703fa4a43e96">BotBody::DEAD_STATE</a></div><div class="ttdef"><b>Definition:</b> <a href="BotBody_8h_source.html#l00053">BotBody.h:53</a></div></div>
+<div class="ttc" id="aclassBotBrain_html_a18db709e7530c9032cef3120c3433778"><div class="ttname"><a href="classBotBrain.html#a18db709e7530c9032cef3120c3433778">BotBrain::BotBrain</a></div><div class="ttdeci">BotBrain(unsigned char maxs)</div><div class="ttdef"><b>Definition:</b> <a href="BotBrain_8cpp_source.html#l00004">BotBrain.cpp:4</a></div></div>
+<div class="ttc" id="aBotBrain_8h_html_ae7080f0c4d2973a03c3817e7d8f3d91b"><div class="ttname"><a href="BotBrain_8h.html#ae7080f0c4d2973a03c3817e7d8f3d91b">TRANSITION_MAP_ENTRY</a></div><div class="ttdeci">#define TRANSITION_MAP_ENTRY(entry)</div><div class="ttdef"><b>Definition:</b> <a href="BotBrain_8h_source.html#l00063">BotBrain.h:63</a></div></div>
+<div class="ttc" id="aclassBotBody_html_a0b8dc9e227b4e30f6c6539022cb31a53"><div class="ttname"><a href="classBotBody.html#a0b8dc9e227b4e30f6c6539022cb31a53">BotBody::attack_range</a></div><div class="ttdeci">int attack_range</div><div class="ttdef"><b>Definition:</b> <a href="BotBody_8h_source.html#l00028">BotBody.h:28</a></div></div>
+<div class="ttc" id="aclassBotBody_html_a2b115504b0e98eabafb935e0f9064979ac423e6f6a57c917bf61e085e63fbc7ca"><div class="ttname"><a href="classBotBody.html#a2b115504b0e98eabafb935e0f9064979ac423e6f6a57c917bf61e085e63fbc7ca">BotBody::RUN_STATE</a></div><div class="ttdef"><b>Definition:</b> <a href="BotBody_8h_source.html#l00052">BotBody.h:52</a></div></div>
+<div class="ttc" id="aclassBotBody_html_a2b115504b0e98eabafb935e0f9064979ada5863b84d27b4faf8815f5901a129dc"><div class="ttname"><a href="classBotBody.html#a2b115504b0e98eabafb935e0f9064979ada5863b84d27b4faf8815f5901a129dc">BotBody::PERSUE_STATE</a></div><div class="ttdef"><b>Definition:</b> <a href="BotBody_8h_source.html#l00050">BotBody.h:50</a></div></div>
+<div class="ttc" id="aclassBotBrain_html_ab32e4b37eac15ea40245de8f1d2fba16ad1323a0a44b5121113ca6194128094db"><div class="ttname"><a href="classBotBrain.html#ab32e4b37eac15ea40245de8f1d2fba16ad1323a0a44b5121113ca6194128094db">BotBrain::CANNOT_HAPPEN</a></div><div class="ttdef"><b>Definition:</b> <a href="BotBrain_8h_source.html#l00025">BotBrain.h:25</a></div></div>
+<div class="ttc" id="aclassBotBody_html_a2b115504b0e98eabafb935e0f9064979a7a4a1c48d4a06f89ed207d3d21524ce9"><div class="ttname"><a href="classBotBody.html#a2b115504b0e98eabafb935e0f9064979a7a4a1c48d4a06f89ed207d3d21524ce9">BotBody::ATTACK_STATE</a></div><div class="ttdef"><b>Definition:</b> <a href="BotBody_8h_source.html#l00051">BotBody.h:51</a></div></div>
+<div class="ttc" id="astructBotData_html"><div class="ttname"><a href="structBotData.html">BotData</a></div><div class="ttdoc">Informacje o wydarzeniu ktore przechowuje BOT.</div><div class="ttdef"><b>Definition:</b> <a href="BotBody_8h_source.html#l00010">BotBody.h:10</a></div></div>
+<div class="ttc" id="aclassBotBody_html_a2b115504b0e98eabafb935e0f9064979aeb218081e83520229366f8e576648573"><div class="ttname"><a href="classBotBody.html#a2b115504b0e98eabafb935e0f9064979aeb218081e83520229366f8e576648573">BotBody::EVENT_STATE</a></div><div class="ttdef"><b>Definition:</b> <a href="BotBody_8h_source.html#l00049">BotBody.h:49</a></div></div>
+<div class="ttc" id="aclassBotBody_html_a2b115504b0e98eabafb935e0f9064979a3316e6a4080062307116e42e67fb40ae"><div class="ttname"><a href="classBotBody.html#a2b115504b0e98eabafb935e0f9064979a3316e6a4080062307116e42e67fb40ae">BotBody::MAX_STATES</a></div><div class="ttdef"><b>Definition:</b> <a href="BotBody_8h_source.html#l00054">BotBody.h:54</a></div></div>
+<div class="ttc" id="aclassBotBody_html_a133c1d2d9b240acc50c4fa0e52ca6146"><div class="ttname"><a href="classBotBody.html#a133c1d2d9b240acc50c4fa0e52ca6146">BotBody::loose_hp</a></div><div class="ttdeci">void loose_hp(int amount)</div><div class="ttdef"><b>Definition:</b> <a href="BotBody_8h_source.html#l00086">BotBody.h:86</a></div></div>
+<div class="ttc" id="aclassBotBody_html_aa1f0ce21a14de801e4ddadf6df981f91"><div class="ttname"><a href="classBotBody.html#aa1f0ce21a14de801e4ddadf6df981f91">BotBody::health_points</a></div><div class="ttdeci">int health_points</div><div class="ttdef"><b>Definition:</b> <a href="BotBody_8h_source.html#l00024">BotBody.h:24</a></div></div>
+<div class="ttc" id="aclassBotBody_html_ad61b074cc11bf23c79482d3c4e09d389"><div class="ttname"><a href="classBotBody.html#ad61b074cc11bf23c79482d3c4e09d389">BotBody::attention</a></div><div class="ttdeci">int attention</div><div class="ttdef"><b>Definition:</b> <a href="BotBody_8h_source.html#l00025">BotBody.h:25</a></div></div>
+<div class="ttc" id="aBotBrain_8h_html_af8cee359bd063c53df3a770f4618acd1"><div class="ttname"><a href="BotBrain_8h.html#af8cee359bd063c53df3a770f4618acd1">END_TRANSITION_MAP</a></div><div class="ttdeci">#define END_TRANSITION_MAP(data)</div><div class="ttdef"><b>Definition:</b> <a href="BotBrain_8h_source.html#l00066">BotBrain.h:66</a></div></div>
+<div class="ttc" id="aclassBotBody_html_a2b115504b0e98eabafb935e0f9064979ab349212709b4edb8e2edb6e3f0a1ca5a"><div class="ttname"><a href="classBotBody.html#a2b115504b0e98eabafb935e0f9064979ab349212709b4edb8e2edb6e3f0a1ca5a">BotBody::IDLE_STATE</a></div><div class="ttdef"><b>Definition:</b> <a href="BotBody_8h_source.html#l00048">BotBody.h:48</a></div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano przez &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.16
+</small></address>
+</body>
+</html>

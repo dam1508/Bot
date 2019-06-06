@@ -1,0 +1,5 @@
+<map id="BotBody" name="BotBody">
+<area shape="rect" id="node1" title="Klasa modelu bazowego danego typu bota." alt="" coords="11,171,83,197"/>
+<area shape="rect" id="node2" href="$classBotBrain.html" title="Maszyna stanow odpowiadajaca za zachowanie bota." alt="" coords="11,95,83,121"/>
+<area shape="rect" id="node3" href="$classEventData.html" title="Klasa przechowujaca dane o wydarzeniu." alt="" coords="5,5,89,32"/>
+</map>

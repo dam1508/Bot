@@ -1,0 +1,5 @@
+<map id="Graficzna hierarchia klas" name="Graficzna hierarchia klas">
+<area shape="rect" id="node1" href="$classBotBrain.html" title="Maszyna stanow odpowiadajaca za zachowanie bota." alt="" coords="5,5,77,32"/>
+<area shape="rect" id="node2" href="$classBotBody.html" title="Klasa modelu bazowego danego typu bota." alt="" coords="125,5,197,32"/>
+<area shape="rect" id="node3" href="$classBotOne.html" title="Przyklad jak mozna wykorzystac cialo bota do zrobienia roznych wersji przeciwnika." alt="" coords="245,5,312,32"/>
+</map>

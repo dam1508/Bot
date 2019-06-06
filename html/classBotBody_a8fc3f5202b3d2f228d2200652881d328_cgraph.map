@@ -1,0 +1,5 @@
+<map id="BotBody::st_attack" name="BotBody::st_attack">
+<area shape="rect" id="node1" title=" " alt="" coords="5,42,140,69"/>
+<area shape="rect" id="node2" href="$classBotBrain.html#a32e581248b0d445c7460433a5457c35e" title="Zdarzenie wewnatrz stanu powodujace zmiane stanu." alt="" coords="193,5,315,47"/>
+<area shape="rect" id="node3" href="$classBotBody.html#a133c1d2d9b240acc50c4fa0e52ca6146" title=" " alt="" coords="188,71,320,98"/>
+</map>

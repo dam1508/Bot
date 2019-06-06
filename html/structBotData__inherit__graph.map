@@ -1,0 +1,4 @@
+<map id="BotData" name="BotData">
+<area shape="rect" id="node1" title="Informacje o wydarzeniu ktore przechowuje BOT." alt="" coords="12,80,83,107"/>
+<area shape="rect" id="node2" href="$classEventData.html" title="Klasa przechowujaca dane o wydarzeniu." alt="" coords="5,5,89,32"/>
+</map>
